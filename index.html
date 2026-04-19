@@ -983,16 +983,43 @@ footer span { color: var(--pink); }
   .resume-wrap  { grid-template-columns: 1fr; gap: 2.5rem; }
   .contact-wrap { grid-template-columns: 1fr; }
   .hero-content { padding: 0 1.5rem; }
+  .projects-grid { grid-template-columns: 1fr; }
+  .skills-cats { grid-template-columns: 1fr; }
+  .transcripts-grid { grid-template-columns: 1fr; }
 }
+
 @media (max-width: 640px) {
   .nav-links { display: none; }
   .nav-hamburger { display: flex; }
-  .section { padding: 6rem 1.25rem 4rem; }
+  .section { padding: 5rem 1rem 3rem; }
   .projects-grid { grid-template-columns: 1fr; }
-  .stat-row { gap: 1.25rem; }
+  .stat-row { gap: 1rem; flex-wrap: wrap; }
+  .hero-name { font-size: clamp(2.8rem, 12vw, 5rem); }
+  .hero-content { padding: 0 1.25rem; }
+  .hero-tagline { font-size: 1rem; }
+  .hero-cta { flex-direction: column; align-items: flex-start; }
+  .btn-primary, .btn-ghost { width: 100%; justify-content: center; }
+  .resume-wrap { grid-template-columns: 1fr; gap: 2rem; }
+  .contact-wrap { grid-template-columns: 1fr; gap: 2rem; }
+  .skills-cats { grid-template-columns: 1fr; }
+  .transcripts-grid { grid-template-columns: 1fr; }
+  .modal-box { margin: 1rem; border-radius: var(--radius-lg); }
+  .modal-header { padding: 1.5rem 1.5rem 0.75rem; }
+  .modal-body { padding: 0 1.5rem 1.5rem; }
+  .cv-download-wrap { flex-direction: column; align-items: flex-start; }
+  nav { padding: 0 1.25rem; }
+  .section-title { font-size: clamp(1.75rem, 7vw, 2.5rem); }
+  .skill-icons-grid { gap: 0.5rem; }
+  .project-card-body { padding: 1rem; }
+  .timeline-item { padding-left: 1.5rem; }
 }
 
-/* Mobile nav open state */
+@media (max-width: 400px) {
+  .hero-name { font-size: 2.5rem; }
+  .stat-row { flex-direction: column; gap: 1rem; }
+  .about-tags { gap: 0.35rem; }
+}
+
 .nav-links.mobile-open {
   display: flex;
   flex-direction: column;
@@ -1006,7 +1033,6 @@ footer span { color: var(--pink); }
   z-index: 499;
 }
 
-/* Active nav link */
 .nav-links a.active { color: var(--text-primary); }
 .nav-links a.active::after { width: 100%; }
 </style>
