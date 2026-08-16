@@ -1198,6 +1198,26 @@ By dynamically controlling both sampling and optimization, it achieves more stab
         </div>
       </div>
     </article>
+    <article class="glass-card project-card reveal" data-project="3">
+  <div class="project-card-img" style="background:linear-gradient(135deg,#071e2e,#0d2e26)">
+    <span style="position:absolute;top:1rem;right:1rem;z-index:10;font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.1em;padding:0.25rem 0.65rem;border-radius:100px;background:rgba(94,234,212,0.12);border:1px solid rgba(94,234,212,0.3);color:var(--teal);text-transform:uppercase;">Active Research</span>
+  </div>
+  <div class="project-card-body">
+    <h3 class="project-card-title">Ultrashort Laser Pulse Characterisation via D-Scan</h3>
+    <p class="project-card-desc">Developing a full d-scan simulation pipeline to characterise ultrashort Ti:Sapphire laser pulses — covering GDD/TOD sweeps, Sellmeier dispersion, 2D/3D trace construction, and RPPA phase retrieval. Supervised by Dr. Anne Harth at ZOT, Hochschule Aalen.</p>
+    <div class="project-tech">
+      <span class="tech-chip">Python</span>
+      <span class="tech-chip">Google Colab</span>
+      <span class="tech-chip">NumPy</span>
+      <span class="tech-chip">Fourier Optics</span>
+      <span class="tech-chip">RPPA Phase Retrieval</span>
+    </div>
+    <div class="project-links">
+      <a class="proj-link primary" href="#" onclick="openModal(3);return false;">📖 Details</a>
+      <a class="proj-link" style="color:var(--teal);border-color:rgba(94,234,212,0.3);">🔬 In Progress</a>
+    </div>
+  </div>
+</article>
   </div>
 </section>
 
@@ -1273,6 +1293,12 @@ strength and reliability for accurate real-time monitoring.</div>
           <div class="timeline-desc">Led the School Innovation Council’s Innovation Cell, managing a 50
 member team and organizing 10+ programs, including speaker sessions
 with experts from UCLA and Johns Hopkins.</div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-year">2026 — Present</div>
+          <div class="timeline-role">Research Intern — Ultrashort Laser Pulse Characterisation</div>
+          <div class="timeline-org">Zentrum für Optische Technologien (ZOT), Hochschule Aalen</div>
+          <div class="timeline-desc">Developing a full d-scan simulation pipeline in Python under Dr. Anne Harth. Covers GDD/TOD dispersion sweeps, Sellmeier-derived fused silica coefficients, 2D/3D d-scan trace construction, and RPPA phase retrieval for Ti:Sapphire laser pulses.</div>
         </div>
       </div>
 
@@ -1507,6 +1533,13 @@ const projects = [
     github: 'https://github.com/Nishi2506/lhc-anomaly-detection',
     
   },
+  {
+  title: 'Ultrashort Laser Pulse Characterisation via D-Scan',
+  desc: 'Developing a full dispersion scan (d-scan) simulation pipeline in Python to characterise ultrashort Ti:Sapphire laser pulses at the Zentrum fur Optische Technologien (ZOT), Hochschule Aalen, under the supervision of Dr. Anne Harth.',
+  highlights: 'Built Sellmeier-derived fused silica dispersion coefficients (k2 ~36.2 fs²/mm, k3 ~27.5 fs³/mm). Constructed 2D and 3D d-scan traces with GDD/TOD sweep cells. Integrated a measured Ti:Sapphire spectrum with Jacobian correction. Currently implementing RPPA phase retrieval.',
+  tech: ['Python', 'Google Colab', 'NumPy', 'Matplotlib', 'Fourier Optics', 'RPPA Phase Retrieval'],
+  status: 'Active research — ZOT, Hochschule Aalen (2026)',
+},
 ];
 
 
